@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f6">
+  <meta name="description" content="Julia Lepri. Nutrição descomplicada, sem frescura e sem radicalismo.">
+
+  <title>Julia Lepri | Nutrição descomplicada</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#inicio" class="brand">
+      Julia Lepri
+      <span>NUTRICIONISTA</span>
+    </a>
+
+    <button class="menu" type="button" aria-controls="nav" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav id="nav" aria-label="Principal">
+      <a href="#sobre">Sobre mim</a>
+      <a href="#caminho">Acompanhamento</a>
+      <a href="#interacao">Seu momento</a>
+
+      <a class="button small" href="https://wa.me/5534991442979" target="_blank" rel="noopener">
+        Vamos conversar
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <div>
+        <p class="eyebrow">NUTRIÇÃO QUE CABE NA SUA VIDA</p>
+
+        <h1>
+          Comer bem pode<br>
+          ser mais <em>simples.</em>
+        </h1>
+
+        <p class="intro">
+          Sem frescura. Sem radicalismo.
+          Uma alimentação que respeita sua rotina e deixa espaço para viver.
+        </p>
+
+        <a class="button" href="https://wa.me/5534991442979?text=Oi%2C%20Julia!%20Quero%20conhecer%20seu%20acompanhamento." target="_blank" rel="noopener">
+          Conhecer o acompanhamento
+        </a>
+
+        <div class="hero-note">
+          <span class="line"></span>
+          Menos regras. Mais possibilidades.
+        </div>
+      </div>
+
+      <div class="portrait">
+        <img src="assets/julia-lepri.webp" width="1122" height="1402" alt="Julia Lepri, nutricionista" fetchpriority="high">
+
+        <div class="portrait-caption">
+          <strong>Julia Lepri</strong>
+          <span>Sua nutrição, descomplicada.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container about">
+      <div>
+        <p class="eyebrow">01 / PRAZER, JULIA</p>
+
+        <h2>
+          Você não precisa<br>
+          viver de <em>recomeços.</em>
+        </h2>
+      </div>
+
+      <div>
+        <p class="lead">
+          A alimentação faz parte da vida.
+          E precisa fazer sentido na sua.
+        </p>
+
+        <p>
+          Sou Julia Lepri e descomplico sua alimentação.
+          Minha proposta é aproximar a nutrição da sua realidade,
+          com escolhas possíveis e uma relação mais leve com a comida.
+        </p>
+
+        <p>
+          Vamos conversar sobre sua rotina, suas dificuldades
+          e o que você gostaria de mudar.
+          O ponto de partida é você.
+        </p>
+
+        <a class="text-link" href="https://www.instagram.com/nutri.julialepri/" target="_blank" rel="noopener">
+          Conheça meu conteúdo
+        </a>
+      </div>
+    </section>
+
+    <section id="caminho" class="soft">
+      <div class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / O ACOMPANHAMENTO</p>
+
+          <h2>
+            Mais clareza nas escolhas.<br>
+            <em>Mais leveza no caminho.</em>
+          </h2>
+        </div>
+
+        <div class="cards">
+          <article>
+            <span class="number">01</span>
+            <h3>Entender você</h3>
+
+            <p>
+              Sua rotina, suas preferências e suas dificuldades
+              têm espaço na conversa.
+            </p>
+          </article>
+
+          <article>
+            <span class="number">02</span>
+            <h3>Descomplicar</h3>
+
+            <p>
+              Conhecer possibilidades para trazer a alimentação
+              para perto da vida real.
+            </p>
+          </article>
+
+          <article>
+            <span class="number">03</span>
+            <h3>Construir um caminho</h3>
+
+            <p>
+              Converse com a Julia e conheça a proposta
+              de acompanhamento para o seu momento.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="interacao" class="section container interactive-section">
+      <div>
+        <p class="eyebrow">03 / UM COMEÇO COM A SUA CARA</p>
+
+        <h2>
+          Vamos conhecer<br>
+          seu <em>momento?</em>
+        </h2>
+
+        <p>
+          Três escolhas para organizar o que você quer conversar
+          com a Julia.
+        </p>
+
+        <p class="fine">
+          Suas respostas ficam nesta página.
+          Só são compartilhadas se você enviar a mensagem no WhatsApp.
+        </p>
+      </div>
+
+      <div class="quiz">
+        <div class="quiz-top">
+          <span id="step-label">ETAPA 1 DE 3</span>
+          <span>Seu ponto de partida</span>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+          <span id="progress"></span>
+        </div>
+
+        <form id="quiz-form">
+          <fieldset data-step="0">
+            <legend>
+              O que você quer trazer para essa conversa?
+            </legend>
+
+            <div class="options">
+              <label>
+                <input type="radio" name="objetivo" value="Quero organizar minha alimentação">
+                <span>Organizar minha alimentação</span>
+              </label>
+
+              <label>
+                <input type="radio" name="objetivo" value="Quero ter mais constância">
+                <span>Ter mais constância</span>
+              </label>
+
+              <label>
+                <input type="radio" name="objetivo" value="Quero uma relação mais leve com a comida">
+                <span>Ter mais leveza com a comida</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset data-step="1" hidden>
+            <legend>O que mais dificulta hoje?</legend>
+
+            <div class="options">
+              <label>
+                <input type="radio" name="desafio" value="Minha maior dificuldade é a rotina corrida">
+                <span>Minha rotina é corrida</span>
+              </label>
+
+              <label>
+                <input type="radio" name="desafio" value="Tenho dificuldade em manter as mudanças">
+                <span>É difícil manter as mudanças</span>
+              </label>
+
+              <label>
+                <input type="radio" name="desafio" value="Tenho dúvidas sobre minhas escolhas">
+                <span>Tenho dúvidas nas escolhas</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset data-step="2" hidden>
+            <legend>Como você descreveria seu momento?</legend>
+
+            <div class="options">
+              <label>
+                <input type="radio" name="momento" value="Quero começar agora">
+                <span>Quero começar agora</span>
+              </label>
+
+              <label>
+                <input type="radio" name="momento" value="Quero entender o acompanhamento primeiro">
+                <span>Quero entender o acompanhamento</span>
+              </label>
+
+              <label>
+                <input type="radio" name="momento" value="Ainda estou explorando possibilidades">
+                <span>Estou explorando possibilidades</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p id="quiz-error" class="error" role="alert"></p>
+
+          <div class="quiz-actions">
+            <button id="back" class="secondary" type="button" hidden>
+              Voltar
+            </button>
+
+            <button id="next" class="button" type="submit">
+              Continuar
+            </button>
+          </div>
+        </form>
+
+        <div id="quiz-result" hidden aria-live="polite">
+          <p class="eyebrow">
+            A CONVERSA PODE COMEÇAR AQUI
+          </p>
+
+          <h3>Seu momento, nas suas palavras.</h3>
+
+          <p id="summary"></p>
+
+          <a id="personal-link" class="button" target="_blank" rel="noopener">
+            Conversar com a Julia
+          </a>
+
+          <button id="restart" class="restart" type="button">
+            Refazer minhas escolhas
+          </button>
+
+          <p class="fine">
+            Este resumo não é uma avaliação nutricional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <p>SEM FRESCURA. SEM RADICALISMO.</p>
+
+      <h2>
+        Menos tudo ou nada.<br>
+        <em>Mais vida real.</em>
+      </h2>
+    </section>
+
+    <section class="section container faq">
+      <div>
+        <p class="eyebrow">04 / SUAS DÚVIDAS</p>
+
+        <h2>
+          Antes de<br>
+          <em>começar.</em>
+        </h2>
+      </div>
+
+      <div>
+        <details>
+          <summary>Como conheço o acompanhamento?</summary>
+
+          <p>
+            Converse com a Julia pelo WhatsApp.
+            Conte seu momento e pergunte sobre a proposta,
+            valores e disponibilidade.
+          </p>
+        </details>
+
+        <details>
+          <summary>Preciso ter um objetivo definido?</summary>
+
+          <p>
+            Você pode começar contando suas dúvidas
+            e o que está difícil na sua rotina.
+          </p>
+        </details>
+
+        <details>
+          <summary>Onde vejo mais sobre seu trabalho?</summary>
+
+          <p>
+            No Instagram
+            <a href="https://www.instagram.com/nutri.julialepri/" target="_blank" rel="noopener">
+              @nutri.julialepri
+            </a>.
+          </p>
+        </details>
+
+        <details>
+          <summary>O conteúdo substitui uma consulta?</summary>
+
+          <p>
+            Não. Orientações individuais devem ser definidas
+            em atendimento profissional.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <p class="eyebrow">
+        VEM PRO TIME DOS DESCOMPLICADOS
+      </p>
+
+      <h2>
+        Seu próximo passo<br>
+        pode ser <em>uma conversa.</em>
+      </h2>
+
+      <p>
+        Conheça uma proposta de nutrição que começa por você.
+      </p>
+
+      <a class="button" href="https://wa.me/5534991442979?text=Oi%2C%20Julia!%20Vim%20pelo%20site%20e%20quero%20conhecer%20seu%20acompanhamento." target="_blank" rel="noopener">
+        Falar com a Julia
+      </a>
+    </section>
+  </main>
+
+  <footer class="container">
+    <a class="brand" href="#inicio">
+      Julia Lepri
+      <span>NUTRICIONISTA</span>
+    </a>
+
+    <p>© <span id="year"></span> Julia Lepri</p>
+
+    <a href="https://www.instagram.com/nutri.julialepri/" target="_blank" rel="noopener">
+      Instagram
+    </a>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5534991442979" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M20.5 3.5A11.9 11.9 0 0 0 1.8 17.8L.2 23.7l6.1-1.6A11.9 11.9 0 0 0 24 11.9c0-3.2-1.3-6.2-3.5-8.4ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.6 1 1-3.5-.3-.4A9.9 9.9 0 1 1 12 21.8Zm5.4-7.4c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.2-.8 1-1 1.2-.4.2-.7.1a8.1 8.1 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6L8.8 6.8c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4S5.7 7.8 5.7 9.3s1.1 2.9 1.3 3.1 2.2 3.4 5.4 4.7c.8.3 1.4.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4s.2-1.3.1-1.4-.5-.3-.8-.5Z" />
+    </svg>
+  </a>
+</body>
+
+</html>
